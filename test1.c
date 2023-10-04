@@ -35,8 +35,8 @@ int main(int argc, char *argv[]){
             printf(1,"thread_create fails\n");
             exit(0);
         }
-      while(wait(0)>=0);
-        printf(1,"I am child, [6] n = %d\n",n);
+       while(wait(0)>=0);
+       printf(1,"I am child, [6] n = %d\n",n);
     }else if(pid > 0){
         int tid = thread_create(test_func,(void *)0);
          if(tid == 0){

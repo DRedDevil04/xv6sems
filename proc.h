@@ -79,7 +79,7 @@ struct proc {
 };
 
 // Additional temp variable for time
-uint temptime;
+extern uint temptime;
 
 // Process memory is laid out contiguously, low addresses first:
 //   text
